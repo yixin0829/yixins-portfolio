@@ -1,0 +1,197 @@
+:root {
+    /* Color scheme */
+    --dark_em: #2A3842;
+    --plain_general: rgb(70, 89, 99);
+    --light1_text: #ECEDD7;
+    --light2_active: rgb(153, 117, 64);
+    --light3_grey: #9FA9AA;
+    --white_grey: rgb(245, 245, 245);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* auto resize image to fit div container size */
+img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+
+
+/* Style the navigation bar */
+.navbar {
+    /* ? If set to 100% does not reach the end */
+    width: 100%;
+    opacity: 0.9;
+    background-color: var(--plain_general, rgb(45, 115, 185));
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    border: none;
+    overflow: auto;
+
+    /*? navbar overlap under name div */
+    position: fixed;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px 50px;
+    color: var(--white_grey, rgb(27, 27, 27));
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: bg-color;
+    /* ? animation not working */
+    animation-duration: 500ms;
+    /* Maintain the animation after mouse hover */
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+        bg-color: var(--dark_em);
+    }
+}
+
+  
+/* Current/active navbar link (by default is "home") */
+.active {
+    background-color: var(--light2_active, grey);
+}
+  
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+
+
+
+
+/* Style for background of main page */
+.bg-main {
+    /* Make background partially transparent */
+    opacity: 0.9;
+    /* ?  100% doesn't work */
+    height: 1024px;
+    width: auto;
+
+    background-image: url(./resrc/seawave.jpg);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* @ SHould add a slide in from left animation */
+.title-container {
+    /* Make background partially transparent */
+    background-color: rgba(32, 32, 32, 0.596);
+    /* Give space above/below the caption */
+    padding: 5px;
+    position: relative;
+    left: 0;
+    /* Align centre vertically*/
+    top: 40%;
+    /* ALign text within the element */
+    text-align: left;
+
+    /* Overwrite 5px left set before */
+    padding-left: 40px;
+
+    width: 50%;
+}
+
+
+
+section {
+    font-family: "Special Elite", cursive;
+    color: var(--dark_em, black);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.title-centred-box {
+    text-align: center; 
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.intro-text-box {
+    width: 67%;
+    height: auto;
+    /* auto margi left/right position the text box in the centre */
+    margin: auto;
+
+    /* Align text on both sides of the box */
+    text-align: justify;
+
+    font-size: 1.5em;
+}
+
+
+
+
+.skill-grid-container {
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 400px 400px;
+    background-color: rgb(204, 204, 204);
+    padding: 10px;
+
+    
+    
+  }
+
+.skill-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#home {
+    font-size: 50px;
+    font-family: "Special Elite", cursive !important;
+    color: var(--white_grey, white);
+
+    letter-spacing: 5px;
+}
+
+
+
+
+button {
+    border-radius: 5px;
+    color: white;
+    background-color: #0f5897;
+    padding: 5px 10px 8px 10px;
+}
+
+
