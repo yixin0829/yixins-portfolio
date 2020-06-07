@@ -47,20 +47,25 @@ img {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
+
+
 }
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
     background-color: bg-color;
-    /* ? animation not working */
-    animation-duration: 500ms;
+
+    /* Animation-name is important in here */
+    animation-name: hover-transition;
+    animation-duration: 1s;
     /* Maintain the animation after mouse hover */
     animation-fill-mode: forwards;
 }
 
-@keyframes background-color {
+/* For nav bar links */
+@keyframes hover-transition {
     100% {
-        bg-color: var(--dark_em);
+        background-color: var(--dark_em, white);
     }
 }
 
@@ -100,6 +105,9 @@ img {
 
 /* @ SHould add a slide in from left animation */
 .title-container {
+    display: flex;
+    flex-direction: row;
+
     /* Make background partially transparent */
     background-color: rgba(32, 32, 32, 0.596);
     /* Give space above/below the caption */
@@ -123,6 +131,8 @@ section {
     font-family: "Special Elite", cursive;
     color: var(--dark_em, black);
 }
+
+
 
 .flex-container {
     display: flex;
@@ -175,6 +185,32 @@ section {
 }
 
 
+.experience-box {
+
+}
+
+.experience-title {
+
+}
+
+
+.project-box {
+
+}
+
+.project-title {
+
+}
+
+.gallery-grid {
+
+}
+
+
+.gallery-item {
+    
+}
+
 
 #home {
     font-size: 50px;
@@ -184,7 +220,9 @@ section {
     letter-spacing: 5px;
 }
 
-
+#footer {
+    text-align: center;
+}
 
 
 button {
