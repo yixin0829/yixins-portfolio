@@ -146,7 +146,7 @@ section {
 }
 
 .external-links img {
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 
@@ -154,6 +154,7 @@ section {
     text-decoration: none;
     padding: 10px;
 }
+
 
 .external-links a:hover {
     transition: 1s;
