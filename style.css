@@ -186,7 +186,9 @@ section {
 
 
 .experience-box {
-
+    width: 50%;
+    margin:auto;
+    
 }
 
 .experience-title {
@@ -195,12 +197,15 @@ section {
 
 
 .project-box {
-
+    width: 50%;
+    margin:auto;
+    
 }
 
 .project-title {
 
 }
+
 
 /* Gallery responsive using flex box */
 .gallery-row {
@@ -210,19 +215,17 @@ section {
     padding: 0 4px;
   }
 
-.gallery-row img {
-    transition: 1s; 
-}
-
+/* When hovering pic will enlarge 1.1x and turn a bit desaturated. */
 .gallery-row img:hover {
+    transition: 1s;
     filter:grayscale(50%);
     transform: scale(1.1);
 } 
 
 /* Create four equal columns that sits next to each other */
 .gallery-column {
-    flex: 25%;
-    flex-direction: column;
+    margin-left: auto;
+    flex: 30%;
     max-width: 25%;
     padding: 0 4px;
 }
