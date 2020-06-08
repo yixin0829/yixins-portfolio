@@ -11,12 +11,17 @@
 body, html {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /* auto resize image to fit div container size */
 img {
     max-width: 70%;
     max-height: 70%;
+}
+
+section {
+    color: var(--dark_em, black);
 }
 
 
@@ -114,23 +119,49 @@ img {
     padding: 5px;
     position: relative;
     left: 0;
-    /* Align centre vertically*/
+    /* Align container centre vertically*/
     top: 40%;
     /* ALign text within the element */
     text-align: left;
+    /* Align logos centre */
+    align-items: center;
 
     /* Overwrite 5px left set before */
     padding-left: 40px;
 
     width: 50%;
+    height: 120px;
+}
+
+.title {
+    margin: 0 60px 0 0;
+}
+
+.resume-link {
+    font-size: 30px;
+    color: var(--light1_text, ivory);
+    background-color: rgba(216, 216, 216, 0.377);
+    height: fit-content;
+    
+}
+
+.external-links img {
+    width: 100px;
+    height: auto;
+}
+
+.external-links a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.external-links a:hover {
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 
 
-section {
-    font-family: "Special Elite", cursive;
-    color: var(--dark_em, black);
-}
 
 
 
@@ -167,13 +198,11 @@ section {
     display: grid;
     width: 70%;
     margin: auto;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: auto auto auto auto auto auto;
     background-color: rgb(204, 204, 204);
     padding: 10px;
 
-    
-    
+    margin-bottom: 100px;
   }
 
 .skill-grid-item {
@@ -186,25 +215,20 @@ section {
 
 
 .experience-box {
+    font-size: 20px;
     width: 50%;
     margin:auto;
     
-}
-
-.experience-title {
-
 }
 
 
 .project-box {
+    font-size: 20px;
     width: 50%;
     margin:auto;
     
 }
 
-.project-title {
-
-}
 
 
 /* Gallery responsive using flex box */
